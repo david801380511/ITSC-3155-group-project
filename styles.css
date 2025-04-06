@@ -88,3 +88,80 @@ button {
 button:hover {
     background: #0056b3;
 }
+
+/* === TEAM THEME === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+    color: #1f2937;
+}
+
+/* Mission Statement Section */
+.mission {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #374151;
+    line-height: 1.5;
+}
+
+.rules {
+    list-style: none;
+    padding-left: 0;
+}
+
+.rules li {
+    background-color: #e5e7eb;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #1f2937;
+    position: relative;
+}
+
+.rules li::before {
+    content: "✓";
+    color: #2563eb;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* Team Section Headings */
+#vision h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#vision h3 {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+/* Card avatar images (if you use them) */
+.card img {
+    border-radius: 50%;
+    margin: 10px 0;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* Add subtle animation to card hover */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Add animation to bio reveal */
+.bio {
+    display: none;
+    margin-top: 10px;
+    color: #4b5563;
+    transition: all 0.3s ease-in-out;
+}
